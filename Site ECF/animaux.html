@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Zoo Arcadia - Animaux et leurs Habitats</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Style pour masquer les sections d'animaux par défaut */
+        .animal-section {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu de navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="animaux.html">Animaux</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <section class="animaux">
+            <h2>Nos Animaux et leurs Habitats</h2>
+            <div id="habitats-container">
+                <!-- Habitat : Savane -->
+                <div id="savane" class="habitat-section">
+                    <h3 onclick="toggleHabitat('savane-animals')">Savane</h3>
+                    <img src="images/savane.jpg" alt="vue de la savane">
+                    <p>La savane est caractérisée par de vastes étendues herbeuses, parfois ponctuées d'arbres isolés. Elle abrite une grande variété de faune, y compris certains des animaux les plus emblématiques du monde.</p>
+                    <ul id="savane-animals" class="animal-section">
+                        <li class="animal-info">
+                            <strong id="gigi" onclick="showInfo('gigi')">Gigi la Girafe</strong> - Giraffa camelopardalis
+                            <img id="gigi-img" src="images/girafe.jpg" alt="Gigi la Girafe" onclick="showInfo('gigi')">
+                            <p id="gigi-desc" style="display:none;">Reconnaissable à son long cou, Gigi est particulièrement adaptée pour brouter les hautes branches des arbres.</p>
+                        </li>
+                        <li class="animal-info">
+                            <strong id="zelda" onclick="showInfo('zelda')">Zelda le Zèbre</strong> - Equus quagga
+                            <img id="zelda-img" src="images/zebre.jpg" alt="Zelda le Zèbre" onclick="showInfo('zelda')">
+                            <p id="zelda-desc" style="display:none;">Zelda se distingue par ses rayures uniques qui sont censées aider à camoufler son groupe des prédateurs.</p>
+                        </li>
+                        <li class="animal-info">
+                            <strong id="ella" onclick="showInfo('ella')">Ella l'Éléphant</strong> - Loxodonta africana
+                            <img id="ella-img" src="images/elephant.jpg" alt="Ella l'Éléphant" onclick="showInfo('ella')">
+                            <p id="ella-desc" style="display:none;">La plus grande créature terrestre, Ella est bien connue pour son intelligence et sa mémoire exceptionnelle.</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Habitat : Marais -->
+                <div id="marais" class="habitat-section">
+                    <h3 onclick="toggleHabitat('marais-animals')">Marais</h3>
+                    <img src="images/marais.jpg" alt="Marais">
+                    <p>Les marais sont des écosystèmes riches en biodiversité, souvent saturés d'eau. Ils offrent un habitat vital pour de nombreuses espèces aquatiques et semi-aquatiques.</p>
+                    <ul id="marais-animals" class="animal-section">
+                        <li class="animal-info">
+                            <strong id="snappy" onclick="showInfo('snappy')">Snappy le Crocodile</strong> - Crocodylus niloticus
+                            <img id="snappy-img" src="images/crocodile.jpg" alt="Snappy le Crocodile" onclick="showInfo('snappy')">
+                            <p id="snappy-desc" style="display:none;">Un redoutable chasseur, Snappy est connu pour sa capacité à rester immobile pendant des heures.</p>
+                        </li>
+                        <li class="animal-info">
+                            <strong id="henry" onclick="showInfo('henry')">Henry l'Hippopotame</strong> - Hippopotamus amphibius
+                            <img id="henry-img" src="images/hippopotame.jpg" alt="Henry l'Hippopotame" onclick="showInfo('henry')">
+                            <p id="henry-desc" style="display:none;">Henry passe la majeure partie de son temps dans l'eau, émergeant la nuit pour paître.</p>
+                        </li>
+                        <li class="animal-info">
+                            <strong id="olivia" onclick="showInfo('olivia')">Olivia la Loutre</strong> - Lutra lutra
+                            <img id="olivia-img" src="images/loutre.jpg" alt="Olivia la Loutre" onclick="showInfo('olivia')">
+                            <p id="olivia-desc" style="display:none;">Agile et joueuse, Olivia est souvent aperçue glissant dans l'eau ou jouant avec des pierres.</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Habitat : Jungle -->
+                <div id="jungle" class="habitat-section">
+                    <h3 onclick="toggleHabitat('jungle-animals')">Jungle</h3>
+                    <img src="images/jungle.jpg" alt="vue de la jungle">
+                    <p>La jungle est dense et pleine de vie, offrant un couvert végétal épais et un climat humide qui sont idéaux pour une multitude d'espèces.</p>
+                    <ul id="jungle-animals" class="animal-section">
+                        <li class="animal-info">
+                            <strong id="rajah" onclick="showInfo('rajah')">Rajah le Tigre</strong> - Panthera tigris
+                            <img id="rajah-img" src="images/tigre.jpg" alt="Rajah le Tigre" onclick="showInfo('rajah')">
+                            <p id="rajah-desc" style="display:none;">Rajah, avec ses rayures impressionnantes, est le roi incontesté de la jungle.</p>
+                        </li>
+                        <li class="animal-info">
+                            <strong id="polly" onclick="showInfo('polly')">Polly le Perroquet</strong> - Psittaciformes
+                            <img id="polly-img" src="images/perroquet.jpg" alt="Polly le Perroquet" onclick="showInfo('polly')">
+                            <p id="polly-desc" style="display:none;">Coloré et bavard, Polly aime imiter les sons de la jungle.</p>
+                        </li>
+                        <li class="animal-info">
+                            <strong id="gorby" onclick="showInfo('gorby')">Gorby le Gorille</strong> - Gorilla beringei
+                            <img id="gorby-img" src="images/gorille.jpg" alt="Gorby le Gorille" onclick="showInfo('gorby')">
+                            <p id="gorby-desc" style="display:none;">Gorby est un gentil géant qui vit en famille et protège vigoureusement son territoire.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>© 2024 Zoo Arcadia - Tous droits réservés</p>
+    </footer>
+
+    <!-- Inclusion du fichier JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

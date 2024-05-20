@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Zoo Arcadia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menu de navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="animaux.html">Animaux</a></li>
+                <li><a href="login.html">Connexion</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <section class="hero">
+            <h1>Bienvenue au Zoo Arcadia</h1>
+            <p>Explorez un monde où la nature et la faune prospèrent en harmonie.</p>
+            <img src="images/image-zoo.jpg" alt="Entrée du Zoo Arcadia">
+        </section>
+
+        <!-- Résumé des services -->
+        <section class="summary">
+            <h2>Nos Services</h2>
+            <ul>
+                <li>Restauration : Profitez de nos différents points de restauration proposant des menus variés pour toute la famille.</li>
+                <li>Visite Guidée : Découvrez le zoo accompagné par nos guides experts. Les visites guidées sont gratuites et vous permettent d'en apprendre davantage sur nos animaux.</li>
+                <li>Petit Train : Parcourez le zoo dans notre petit train, parfait pour les familles avec enfants ou pour ceux qui préfèrent une visite plus reposante.</li>
+            </ul>
+        </section>
+
+        <!-- Résumé des habitats -->
+        <section class="summary">
+            <h2>Nos Habitats</h2>
+            <ul>
+                <li>Savane : Abritant des girafes, des zèbres et d'autres animaux typiques de la savane.</li>
+                <li>Jungle : Accueillant des tigres, des singes et de nombreuses espèces exotiques.</li>
+                <li>Marais : Maison de nos crocodiles, tortues et autres créatures des marais.</li>
+            </ul>
+        </section>
+
+        <!-- Section pour laisser un avis -->
+        <section class="feedback">
+            <h2>Laissez votre avis</h2>
+            <p>Nous apprécions vos retours pour améliorer votre expérience chez nous.</p>
+            <form id="feedback-form" action="submit_feedback.php" method="post">
+                <label for="username">Votre nom ou pseudo:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="comment">Votre avis:</label>
+                <textarea id="comment" name="comment" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>© 2024 Zoo Arcadia - Tous droits réservés</p>
+    </footer>
+
+    <!-- Inclusion du fichier JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>

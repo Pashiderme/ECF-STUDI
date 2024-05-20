@@ -1,0 +1,12 @@
+{
+    "animals": [
+        {
+            "name": "Girafe",
+            "description": "Les girafes sont les plus grands mammifères terrestres."
+        },
+        {
+            "name": "Zèbre",
+            "description": "Les zèbres sont connus pour leurs rayures distinctives."
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "animals": [
+        {
+            "name": "Tigre",
+            "description": "Les tigres sont de grands félins connus pour leur force et leur agilité."
+        },
+        {
+            "name": "Singe",
+            "description": "Les singes sont des primates intelligents et sociaux."
+        }
+    ]
+}

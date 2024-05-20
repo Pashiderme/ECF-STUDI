@@ -1,0 +1,12 @@
+{
+    "animals": [
+        {
+            "name": "Crocodile",
+            "description": "Les crocodiles sont de grands reptiles aquatiques."
+        },
+        {
+            "name": "Tortue",
+            "description": "Les tortues sont connues pour leurs carapaces protectrices et leur longévité."
+        }
+    ]
+}
